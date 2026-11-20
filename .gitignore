@@ -1,0 +1,12 @@
+﻿# 大文件不进 git，走 Release 附件
+*.zip
+*.exe
+*.7z
+*.rar
+# 程序树（如果需要整树入仓，用 git lfs track "CAM350 15.1/**"）
+CAM350 15.1/
+payload/
+# 本地临时
+*.log
+slim_setup.log
+_removed_3d_and_docs/
