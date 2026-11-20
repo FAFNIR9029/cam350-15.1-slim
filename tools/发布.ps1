@@ -1,4 +1,4 @@
-# 发布到 GitHub：创建仓库（如不存在）-> 推送代码 -> 建 Release 并上传 255 MB 附件
+﻿# 发布到 GitHub：创建仓库（如不存在）-> 推送代码 -> 建 Release 并上传 255 MB 附件
 # 用法：
 #   1) 先登录： gh auth login
 #   2) 运行：  .\tools\发布.ps1 -RepoOwner FAFNIR9029 -RepoName CAM350_Slim
