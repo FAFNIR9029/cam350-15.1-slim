@@ -27,7 +27,7 @@ if ($Token.Length -lt 20) { throw "token too short" }
 $tmp = Join-Path $env:TEMP "gh_token.txt"
 Set-Content -LiteralPath $tmp -Value $Token -Encoding ASCII -NoNewline
 try {
-    & $ghExe auth login --hostname github.com --git-protocol https --with-token < $tmp
+    Get-Content -LiteralPath $tmp -Raw | & $ghExe auth login --hostname github.com --git-protocol https --with-token
     if ($LASTEXITCODE -ne 0) { throw "gh auth login failed (invalid token or scope)" }
 } finally {
     Remove-Item $tmp -Force -ErrorAction SilentlyContinue
